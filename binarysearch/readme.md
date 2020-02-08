@@ -1,5 +1,3 @@
-# 查找
-
 ## 二分查找
 - bisect --- 数组二分查找算法 https://docs.python.org/zh-cn/3/library/bisect.html
 

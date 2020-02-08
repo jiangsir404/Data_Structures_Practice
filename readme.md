@@ -12,6 +12,10 @@
 - 极客时间 王争 《数据结构与算法之美》 https://time.geekbang.org/column/intro/126
 - 王争 数据结构和算法必知必会的50个代码实现 https://github.com/wangzheng0822/algo  star: 13.6k
 
+- LeetCode做题记录: https://github.com/liweiwei1419/LeetCode-Solution-Well-Formed
+
+- 制作算法动画的项目和公众号: 五分钟算法，博客: https://www.cxyxiaowu.com/
+
 ## 我的练习题
 https://leetcode-cn.com/
 
@@ -26,5 +30,6 @@ https://leetcode-cn.com/
 
 ### sort
 
-### search
+### binarysearch 
 - [x] 搜索插入位置 searchInsert.py
+- [x]  在排序数组中查找元素的第一个和最后一个位置 searchRange.py
