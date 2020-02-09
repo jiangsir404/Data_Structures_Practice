@@ -32,4 +32,10 @@ https://leetcode-cn.com/
 
 ### binarysearch 
 - [x] 搜索插入位置 searchInsert.py
-- [x]  在排序数组中查找元素的第一个和最后一个位置 searchRange.py
+- [x] 在排序数组中查找元素的第一个和最后一个位置 searchRange.py
+- [x] 287. 寻找重复数 findDuplicate.py
+- [x] 374. 猜数字大小 guessNumer.py
+
+### bitmap
+- [x] 位图结构实现 bitmap.py
+- [x] 布隆过滤器的实现 bloomfilter.py

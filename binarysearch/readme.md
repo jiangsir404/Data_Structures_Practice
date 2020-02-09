@@ -1,4 +1,4 @@
-## 二分查找
+u## 二分查找
 - bisect --- 数组二分查找算法 https://docs.python.org/zh-cn/3/library/bisect.html
 
 python内置了一个二分查找的模块 bisect
