@@ -36,6 +36,11 @@ https://leetcode-cn.com/
 - [x] 287. 寻找重复数 findDuplicate.py
 - [x] 374. 猜数字大小 guessNumer.py
 
+## stack
+- [x] 232.用栈实现队列 232_MyQueue.py
+
+## queue
+
 ### bitmap
 - [x] 位图结构实现 bitmap.py
 - [x] 布隆过滤器的实现 bloomfilter.py
