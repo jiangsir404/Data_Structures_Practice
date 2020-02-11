@@ -38,6 +38,9 @@ https://leetcode-cn.com/
 
 ## stack
 - [x] 232.用栈实现队列 232_MyQueue.py
+- [x] 20.有效的括号 20_isValidBraces.py
+- [x] 1047. 删除字符串中的所有相邻重复项 1047_removeDuplicates.py
+- [x] 224. 基本计算器 224_calculate.py
 
 ## queue
 

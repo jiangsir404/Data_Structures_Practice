@@ -59,7 +59,10 @@ class ListStack(object):
 
     def pop(self):
         """弹出栈顶元素"""
-        return self._items.pop()
+        if len(self._items) >0:
+            return self._items.pop()
+        else:
+            return None
 
     def peek(self):
         """返回栈顶元素"""
@@ -72,14 +75,14 @@ class ListStack(object):
         return " ".join("%s" % i for i in self._items)
 
 def test_arraystack():
-    stack = ArrayStack()
+    stack = ListStack()
     for i in range(9):
         stack.push(i)
     print(stack)
-    for _ in range(3):
-        stack.pop()
-    print(stack)
-    print(stack.peek())
+    for _ in range(10):
+        print stack.pop()
+    # print(stack)
+    # print(stack.peek())
 
 if __name__ == '__main__':
     #test_linkedstack()
