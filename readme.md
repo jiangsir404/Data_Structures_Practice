@@ -29,6 +29,7 @@ https://leetcode-cn.com/
 
 
 ### sort
+- [x] 堆排序算法 heap_sort.py
 
 ### binarysearch 
 - [x] 搜索插入位置 searchInsert.py
@@ -43,6 +44,7 @@ https://leetcode-cn.com/
 - [x] 224. 基本计算器 224_calculate.py
 
 ## queue
+- [x] Queue模块的类的实现原理 queue.py 
 
 ### bitmap
 - [x] 位图结构实现 bitmap.py
