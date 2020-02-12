@@ -19,6 +19,7 @@ class Solution(object):
 			1. 如果比运算符栈顶元素的优先级高，就将当前运算符压入栈
 			2. 如果比运算符栈顶元素的优先级低或者相同，从运算符栈中取栈顶运算符，从操作数栈顶取2个操作符，然后计算后把计算结果压入操作数栈，继续比较。
 					
+		bug: "(5-(1+(5)))" 输入会报错
 		"""
 		operator = []
 		nums = []
@@ -34,17 +35,12 @@ class Solution(object):
 		for c, i in enumerate(s):
 			if i.isdigit():
 				j = i
-				while True:			
-					print 'test',c, operator, nums	
-					c = c -1 
-
-					if c == -1 or not s[c].isdigit():
-						nums.append(j)
-						break
-					if s[c].isdigit():
-						
-						j =  nums.pop() + j
-						nums.append(j)
+				# print 'test',c, 
+				if c > 0 and s[c-1].isdigit() and nums:
+					j = nums.pop() + j
+					nums.append(j)
+				else:
+					nums.append(j)
 
 			elif i in ['(','{','[']:
 				nums.append(i)
@@ -78,16 +74,60 @@ class Solution(object):
 					nums.append(str(op_res))
 					operator.append(i)
 			print i, operator, nums
-		if len(nums) ==2 and operator:
+		while len(nums) >= 2 and operator:
 			op = operator.pop()
 			num1, num2 = nums.pop(), nums.pop()
 			op_res = switch[op](num2, num1)
 			nums.append(str(op_res))
-		return "".join(nums)
+		return nums[0]
 
 
+	def calculate2(self, s):
+		"""解法2：因为该题只设计=,-两种运算，因此可以把他们当作正负号而不是运算符来处理，这样就只需要一个操作数栈即可。
+
+		算法:
+			1. 正序迭代字符串。
+			2. 操作数可以由多个字符组成，字符串 "123" 表示数字 123，它可以被构造为：123 >> 120 + 3 >> 100 + 20 + 3。如果我们读取的字符是一个数字，则我们要将先前形成的操作数乘以 10 并于读取的数字相加，形成操作数。
+			3. 每当我们遇到 + 或 - 运算符时，我们首先将表达式求值到左边，然后将正负符号保存到下一次求值。
+			4. 如果字符是左括号 (，我们将迄今为止计算的结果和符号添加到栈上，然后重新开始进行计算，就像计算一个新的表达式一样。
+			5. 如果字符是右括号 )，则首先计算左侧的表达式。则产生的结果就是刚刚结束的子表达式的结果。如果栈顶部有符号，则将此结果与符号相乘。
+			
+		"""
+		stack = [] # 操作数栈
+		operand = 0
+		res = 0 #
+		sign = 1 # 1表示正好+, -1表示符号-
+
+		for ch in s:
+			if ch.isdigit():
+				# 构造操作数, 可能会进位
+				operand = (operand * 10) + int(ch)
+			elif ch == '+':
+				res += sign * operand
+				# 保存+符号
+				sign = 1
+				# 重置操作数
+				operand = 0
+			elif ch == '-':
+				res += sign * operand
+				sign = -1
+				operand = 0
+			elif ch == '(':
+				# 依次将计算结果和符合入栈
+				stack.append(res)
+				stack.append(sign)
+				# 充值sign和res
+				sign = 1
+				res = 0
+			elif ch == ')':
+				res += sign * operand
+				res *= stack.pop() # *sign
+				res += stack.pop() # +operand
+
+				operand = 0
+		return res + sign * operand
 
 if __name__ == '__main__':
 	s = Solution()
-	string = "1213234"
-	print s.calculate(string)
+	string = "1+2-(44)"
+	print s.calculate2(string)
