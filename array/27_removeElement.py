@@ -2,7 +2,7 @@
 #coding:utf-8
 
 """
-算法: 移除元素
+算法: 27.移除元素
 
 https://leetcode-cn.com/problems/remove-element/
 """

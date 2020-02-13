@@ -2,7 +2,7 @@
 #coding:utf-8
 
 """
-算法: 回文数
+9.算法: 回文数
 
 https://leetcode-cn.com/problems/palindrome-number/
 """

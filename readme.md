@@ -27,7 +27,6 @@ https://leetcode-cn.com/
 - [x] 删除排序数组中的重复项 removeDuplicate.py
 - [x] 移除元素 removeElement.py
 
-
 ### sort
 - [x] 堆排序算法 heap_sort.py
 

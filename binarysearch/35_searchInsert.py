@@ -2,7 +2,7 @@
 #coding:utf-8
 
 """
-算法: 搜索插入位置
+算法: 35.搜索插入位置
 
 Referer:
 https://leetcode-cn.com/problems/search-insert-position/
@@ -27,6 +27,19 @@ class Solution(object):
     def searchInsert(self, nums, target):
     	"""二分查找
     	"""
+    	size = len(nums)
+    	# 特判
+    	if size ==0: return 0
+    	if nums[size-1] < target: return size
+    	left, right = 0, size - 1
+    	while left < right:
+    		mid = (left + right) / 2
+    		if nums[mid] < target:
+    			left = mid + 1
+    		else:
+    			right = mid
+    	return left
+
 
 
 if __name__ == '__main__':
