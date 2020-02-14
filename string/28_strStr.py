@@ -9,7 +9,7 @@ https://leetcode-cn.com/problems/implement-strstr/submissions/
 
 class Solution(object):
 	def strStr(self, haystack, needle):
-		"""
+		"""遍历匹配, 暴力解法，时间复杂度最高
 		:type haystack: str
 		:type needle: str
 		:rtype: int
@@ -23,6 +23,11 @@ class Solution(object):
 		    if haystack[i:i+sublen] == needle:
 		        return i
 		return 0
+
+	def strStr(self, haystack, needle):
+		"""利用字符串函数find()
+		"""
+		return haystack.find(needle)
 
 if __name__ == '__main__':
 	s = Solution()
