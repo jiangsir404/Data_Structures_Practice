@@ -34,6 +34,8 @@ https://leetcode-cn.com/
 ### sort
 - [x] 堆排序算法 heap_sort.py
 - [x] 冒泡排序 bubble_sort.py
+- [x] 插入排序 insert_sort.py
+- [x] 选择排序 select_sort.py
 
 ### binarysearch 
 - [x] 搜索插入位置 searchInsert.py
