@@ -27,8 +27,13 @@ https://leetcode-cn.com/
 - [x] 删除排序数组中的重复项 removeDuplicate.py
 - [x] 移除元素 removeElement.py
 
+### string
+- [x] 28. 实现 strStr() 28_strStr.py
+- [x] 344. 反转字符串 344_reverseString.py
+
 ### sort
 - [x] 堆排序算法 heap_sort.py
+- [x] 冒泡排序 bubble_sort.py
 
 ### binarysearch 
 - [x] 搜索插入位置 searchInsert.py
