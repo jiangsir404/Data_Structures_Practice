@@ -20,12 +20,12 @@
 https://leetcode-cn.com/
 
 ### array
-- [x] 移动零 moveZeros.py
+- [x] 移动零 283_moveZeros.py
 - [x] 两数之和 twoSum.py
-- [x] 三数之和 threeSum.py
-- [x] 多数元素 majorityElement.py
-- [x] 删除排序数组中的重复项 removeDuplicate.py
-- [x] 移除元素 removeElement.py
+- [x] 三数之和 15_threeSum.py
+- [x] 多数元素 169_majorityElement.py
+- [x] 删除排序数组中的重复项 26_removeDuplicate.py
+- [x] 移除元素 27_removeElement.py
 
 ### string
 - [x] 28. 实现 strStr() 28_strStr.py
