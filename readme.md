@@ -52,6 +52,9 @@ https://leetcode-cn.com/
 ## queue
 - [x] Queue模块的类的实现原理 queue.py 
 
+## heap
+- [x] 面试题40. 最小的k个数 getLeastNumbers.py 
+
 ### bitmap
 - [x] 位图结构实现 bitmap.py
 - [x] 布隆过滤器的实现 bloomfilter.py

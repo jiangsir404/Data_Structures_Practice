@@ -8,10 +8,10 @@
 from heapq import heappush, heappop
 
 def heapsort(nums):
-	h = []
+	min_heap = []
 	for i in nums:
-		heappush(h, i)
-	return [heappop(h) for i in range(len(h))]
+		heappush(min_heap, i) # 默认构建最小堆
+	return [heappop(min_heap) for i in range(len(min_heap))]
 
 def test_heap():
 	nums = [1, 3, 5, 7, 9, 2, 4, 6, 8, 0]
