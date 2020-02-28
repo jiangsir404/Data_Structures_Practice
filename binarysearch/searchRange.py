@@ -50,7 +50,9 @@ class Solution(object):
 		return left 
 
 	def findLastIndex(self, nums, target):
-		"""中位数被分到右区间，因此搜索到的是最后元素的下标
+		"""查找最后一个值等于给定值的元素
+
+		中位数被分到右区间，因此搜索到的是最后元素的下标
 		
 		Example:
 			>>>[5,7,7,8,8,10], 8
@@ -63,7 +65,6 @@ class Solution(object):
 		while left < right:
 			# left=mid, 中位数需要向上取整
 			mid = left + (right - left + 1) // 2
-			print left, mid, 
 			if nums[mid] > target:
 				# mid在右边区间
 				right = mid - 1
@@ -72,7 +73,10 @@ class Solution(object):
 		return left
 
 
+
+
+
 if __name__ == '__main__':
 	s = Solution()
-	nums, target = [5,7,7,8,8,10], 8
+	nums, target = [5,7,7,8,8,8,10], 8
 	print s.searchRange(nums, target)
