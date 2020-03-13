@@ -1,6 +1,6 @@
-# Python数据结构
+# 数据结构练习(Python/Java)
 
-记录自己学习Python数据结构的一些内容
+记录自己学习数据结构的一些内容(Python/Java)
 
 ## 资料
 - Python 算法与数据结构视频教程 https://pegasuswang.github.io/python_data_structures_and_algorithms/
