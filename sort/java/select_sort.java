@@ -1,4 +1,7 @@
-package java1;
+
+/*选择排序
+rivir*/
+
 import java.util.Arrays;
 
 public class select_sort {

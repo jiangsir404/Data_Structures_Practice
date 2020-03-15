@@ -20,7 +20,7 @@
 https://leetcode-cn.com/
 
 ### array
-- [x] 移动零 283_moveZeros.py
+- [x] 移动零 283_moveZeros.py MoveZeros.java
 - [x] 两数之和 twoSum.py
 - [x] 三数之和 15_threeSum.py
 - [x] 多数元素 169_majorityElement.py
