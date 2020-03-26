@@ -55,10 +55,14 @@ https://leetcode-cn.com/
 - [ ] Design Circular Deque（设计一个双端队列）https://leetcode-cn.com/problems/design-circular-deque/
 
 ## queue
-- [x] Queue模块的类的实现原理 queue.py 
+- [x] Queue模块的类的实现原理 queue
 
 ## heap
-- [x] 面试题40. 最小的k个数 getLeastNumbers.py 
+- [x] 面试题40. 最小的k个数 getLeastNumbers 
+
+## hashmap
+- [x] 136. 只出现一次的数字 singleNumber
+
 
 ## bitmap
 - [x] 位图结构实现 bitmap.py
