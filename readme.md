@@ -34,10 +34,10 @@ https://leetcode-cn.com/
 - [ ] Reverse Words in a String（翻转字符串里的单词）
 
 ### sort
-- [x] 堆排序算法 heap_sort.py
-- [x] 冒泡排序 bubble_sort.py
-- [x] 插入排序 insert_sort.py
-- [x] 选择排序 select_sort.py
+- [x] 堆排序算法 heap_sort.py 
+- [x] 冒泡排序 bubble_sort.py bubble_sort.java
+- [x] 插入排序 insert_sort.py insert_sort.java
+- [x] 选择排序 select_sort.py select_sort.java
 
 ### binarysearch 
 - [x] 搜索插入位置 searchInsert.py
@@ -55,13 +55,13 @@ https://leetcode-cn.com/
 - [ ] Design Circular Deque（设计一个双端队列）https://leetcode-cn.com/problems/design-circular-deque/
 
 ## queue
-- [x] Queue模块的类的实现原理 queue
+- [x] Queue模块的类的实现原理 queue.py
 
 ## heap
-- [x] 面试题40. 最小的k个数 getLeastNumbers 
+- [x] 面试题40. 最小的k个数 getLeastNumbers.py
 
 ## hashmap
-- [x] 136. 只出现一次的数字 singleNumber
+- [x] 136. 只出现一次的数字 singleNumber.py singleNumber.java
 
 
 ## bitmap
